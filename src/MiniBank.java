@@ -8,11 +8,11 @@ public class MiniBank {
        Scanner sc = new Scanner(System.in);
        do{
            System.out.println("Operations");
-           System.out.println("1 - deposit");
-           System.out.println("2 - withdraw");
-           System.out.println("3 - transactions");
-           System.out.println("4 - details");
-           System.out.println("5 - end operation");
+           System.out.println("1 - deposit ");
+           System.out.println("2 - withdraw ");
+           System.out.println("3 - transactions ");
+           System.out.println("4 - details ");
+           System.out.println("5 - end operation ");
 
 
            option = sc.nextInt();

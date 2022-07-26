@@ -29,14 +29,14 @@ public class BankAccount {
     }
 
     public void deposit() {
-        System.out.println("Enter deposit amount: \n");
+        System.out.println("Enter deposit amount : \n");
         double amount = scan.nextDouble();
         this.balance += amount;
         transactions.add(amount);
     }
 
     public void withdraw() {
-        System.out.println("Enter withdrawal amount: \n");
+        System.out.println("Enter withdrawal amount : \n");
         double amount = scan.nextDouble();
         if (balance >= amount) {
             this.balance -= amount;
