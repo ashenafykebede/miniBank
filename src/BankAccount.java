@@ -26,17 +26,18 @@ public class BankAccount {
         System.out.println("Name : " + clientName);
         System.out.println("Account number : " + accountNumber);
         System.out.println("Balance: " + balance);
+        System.out.println("=================================");
     }
 
     public void deposit() {
-        System.out.println("Enter deposit amount: \n");
+        System.out.println("Enter deposit amount : \n");
         double amount = scan.nextDouble();
         this.balance += amount;
         transactions.add(amount);
     }
 
     public void withdraw() {
-        System.out.println("Enter withdrawal amount: \n");
+        System.out.println("Enter withdrawal amount : \n");
         double amount = scan.nextDouble();
         if (balance >= amount) {
             this.balance -= amount;
@@ -52,16 +53,11 @@ public class BankAccount {
             trans = i > 0 ? "deposited " + i : "withdrawn " + i;
             System.out.println(trans);
         }
-        System.out.println("--------------------------------");
-        System.out.println("Current balance : " + balance);
-        System.out.println("--------------------------------");
     }
 
-    public boolean findClient() {
-        System.out.println("Enter account number to search : \n");
-        int accountNo = scan.nextInt();
+    public boolean findClient(int accountNo) {
         if (accountNumber==accountNo) {
-            showClientDetails();
+//            showClientDetails();
             return true;
         }
         return false;
